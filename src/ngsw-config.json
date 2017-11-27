@@ -21,7 +21,21 @@
     "resources": {
       "files": [
         "/assets/**"
+      ],
+      "urls": [
+        "http://fonts.googleapis.com/**"
       ]
+    }
+  }],
+  "dataGroups": [{
+    "name": "strava-api",
+    "urls": [
+      "https://www.strava.com/**"
+    ],
+    "cacheConfig": {
+      "strategy": "performance",
+      "maxSize": 20,
+      "maxAge": "1m"
     }
   }]
 }
